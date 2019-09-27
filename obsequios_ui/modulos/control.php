@@ -5,12 +5,12 @@ $pass= $_POST['pass'];
 $sql = "select * from operador where trim(codoperador)='".$usuario."' and trim(clave)='".$pass."'";
 //Ejecuto la sentencia 
 $result = mysql_query($sql,$link); 
-//vemos si el usuario y contraseÒa es v·ildo 
-//si la ejecuciÛn de la sentencia SQL nos da alg˙n resultado 
-//es que si que existe esa conbinaciÛn usuario/contraseÒa 
+//vemos si el usuario y contrase√±a es v√°lido 
+//si la ejecuci√≥n de la sentencia SQL nos da alg√∫n resultado 
+//es que si que existe esa conbinaci√≥n usuario/contrase√±a 
 if (mysql_num_rows($result)!=0){ 
-    //usuario y contraseÒa v·lidos 
-    //defino una sesion y guardo datos 
+    //usuario y contrase√±a v√°lidos 
+    //defino una sesi√≥n y guardo datos 
     $row = mysql_fetch_array($result);
     session_start(); 
 	$_SESSION['USUARIO']=$usuario;

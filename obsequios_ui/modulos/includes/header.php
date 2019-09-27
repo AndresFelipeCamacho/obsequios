@@ -5,7 +5,7 @@ echo'
 <!DOCTYPE html>
 <html>
 <head>
-<title>'.$GLOBALS['titulo'].' - CANAPRO O.C.</title>
+<title>'.$GLOBALS['titulo'].' - CANAPRO C.A.C.</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 </head>
 <link href="../CSS/estilos.css" type="text/css" rel="stylesheet">
