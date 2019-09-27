@@ -14,10 +14,10 @@ session_start();
 </style>
 <p>
 <form action="security/control1.php" method="post">
-  <table class="principal" align="left" width="301" cellspacing="1" cellpadding="1" border="0">
+  <table class="principal" align="center" width="301" cellspacing="1" cellpadding="1" border="0">
 		<tr valign="middle">
     		<td class="principal" colspan="2" <?php if ($_GET["errorusuario"]=="si"){?> bgcolor=red>
-			  <div align="left"><span style="color:ffffff"><b>No Existe Cedula....</b></span>
+			  <div align="left"><span style="color:ffffff"><b>No existe la cédula</b></span>
 				<?php }else{ ?>
 				bgcolor=#3399cc>Identificaci&oacute;n
                 <?php } ?>
@@ -36,7 +36,7 @@ session_start();
 		</tr>
 		<tr>
 		    <td class="principal" colspan="2" align="center"><div align="left">
-		      <input type="Submit" value="Verificar ...">
+		      <input type="Submit" value="Verificar">
 		      </div></td>
 		</tr>
   </table>
@@ -130,9 +130,9 @@ echo '<input name="nit" type="hidden" value="'.$_SESSION['NIT'].'">';
 echo '<input name="agencia" type="hidden" value="'.$_SESSION['NOMBREAGENCIA'].'">';
 echo '<input name="operador" type="hidden" value="'.$_SESSION['USUARIO'].'">';
 echo'  <input type="Submit" name="Entregar" Value="Entregar_Obsequio"/>
-  <span class="Estilo20">&lt;-- Al Presionar Este Boton Queda Registrado la Entrega del Obsequio..  </span>
+  <span class="Estilo20">&lt;-- Registrar entrega del obsequio</span>
 </form>';
-echo '<p><a href="cambiarclave.php?operador='.$_SESSION['USUARIO'].'">Cambiar-Contrasena</a></p>';
+echo '<p><a href="cambiarclave.php?operador='.$_SESSION['USUARIO'].'">Cambiar-Contraseña</a></p>';
 ?>
 <table width="500" border="1">
   <tr>
